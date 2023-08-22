@@ -13,9 +13,9 @@ public class DataSourceUtils {
     // static的属性是只加载一次
     private static final DruidDataSource dataSource = new DruidDataSource();
     static {
-        dataSource.setUrl("jdbc:mysql://localhost:3306/suibian?serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/your_table_name?serverTimezone=UTC");
         dataSource.setUsername("root");
-        dataSource.setPassword("jiangfei123");
+        dataSource.setPassword("your_password");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
     }
     public static DruidDataSource getDataSource() {
