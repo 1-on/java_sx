@@ -13,6 +13,13 @@ import java.util.List;
  * @description 业务：登录  数据库：查询
  * @date 2023/6/7 8:46
  */
+/**
+* Created by Intellij IDEA
+* @Author: Wang Shunqi
+* @Date: 2023/12/28
+* @Time: 11:45
+* MAY THE CHAOS TAKE THE WORLD
+*/
 public class UserDao {
     public User selectByNumAndPwd(String num, String password) {
         String sqlCondition = "select * from users where num = ? and PASSWORD = ?";
