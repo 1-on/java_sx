@@ -17,7 +17,7 @@ public class JDBCtest {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // 获得连接
             String url = "jdbc:mysql://localhost:3306/suibian?serverTimezone=UTC";
-            Connection conn = DriverManager.getConnection(url,"root","jiangfei123");
+            Connection conn = DriverManager.getConnection(url,"root","your_password");
             System.out.println(conn);
 
             // 执行SQL语句 PreparedStatement
